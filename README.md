@@ -1,16 +1,22 @@
-# MyPortfolio
+# MyPortfolio (Readme will be updated soon)
 
-### A clean portfolio template. (I will be updated soon)
+### My personal clean portfolio.
 
 # Sections
 
 - Home
-- Education and Certificates
+- Education
 - Experience
 - Projects
 - Contact and Resume
 
-# How To Use
+# Follow Me
+
+- [Git](https://github.com/Sopzak/)
+- [LinkedIn](https://www.linkedin.com/in/jesiel-sopzak)
+- [Instagram](https://www.instagram.com/jesopzak/)
+
+# How To Use/Clone this project
 
 - Clone this repository (or fork, then clone your fork :) )
 - Run `npm i`
