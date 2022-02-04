@@ -39,8 +39,9 @@ const skills = {
       skills: [
         "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
         "⚡ Building responsive website front end using ReactJS",
-        "⚡ Creating application backend in C# or Node",
+        "⚡ Creating application backend in C# or Node js",
         "⚡ Integration of third party services such as Firebase/ AWS",
+        "⚡ Creating games and VR interfaces (I am learning VR) with Unity 3D",
       ],
       softwareSkills: [
         {
@@ -476,7 +477,7 @@ const experience = {
 
 // Projects Page
 const projectsHeader = {
-  title: "Projects",
+  title: "Portfolio",
   description:
     "My projects make use of a vast variety of latest technology tools. My best experience is to create C# Backend Projects with MVC, ASP.Net and React Project. In my spare time I develop games in Unity and participate in Hackathons to test new technologies. Below are some of my projects.",
   avatar_image_path: "projects_image.svg",

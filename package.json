@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "Portfolio",
-  "homepage": "https://Sopzak/github.io",
+  "name": "portfolio",
+  "homepage": "https://Sopzak.github.io/Portfolio",
   "version": "1.0.0",
   "scripts": {
     "build": "react-scripts build",

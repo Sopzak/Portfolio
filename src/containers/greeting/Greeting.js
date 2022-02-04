@@ -46,6 +46,15 @@ export default function Greeting(props) {
                 >
                   Contact Me
                 </button>
+                <button
+                  {...styles}
+                  className="button"
+                  onClick={() => {
+                    history.push("/projects");
+                  }}
+                >
+                  Portfolio
+                </button>
               </div>
             </div>
           </div>
