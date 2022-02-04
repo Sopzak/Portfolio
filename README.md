@@ -4,6 +4,8 @@
 
 ![Portfolio](/src/assests/images/portfolio.gif)
 
+[Publish version](https://sopzak.github.io/Portfolio/)
+
 # Sections
 
 - Home
