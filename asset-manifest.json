@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.32bff136.chunk.css",
-    "main.js": "/Portfolio/static/js/main.6a02f43f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.6a02f43f.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.cf1dcc85.chunk.css",
+    "main.js": "/Portfolio/static/js/main.d4673f22.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.d4673f22.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
     "static/js/2.45aea08f.chunk.js": "/Portfolio/static/js/2.45aea08f.chunk.js",
     "static/js/2.45aea08f.chunk.js.map": "/Portfolio/static/js/2.45aea08f.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.b806175b4852fa5581281a0b263470ce.js": "/Portfolio/precache-manifest.b806175b4852fa5581281a0b263470ce.js",
+    "precache-manifest.41c9c2eb2da42f8374b0b905314b04ad.js": "/Portfolio/precache-manifest.41c9c2eb2da42f8374b0b905314b04ad.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.32bff136.chunk.css.map": "/Portfolio/static/css/main.32bff136.chunk.css.map",
+    "static/css/main.cf1dcc85.chunk.css.map": "/Portfolio/static/css/main.cf1dcc85.chunk.css.map",
     "static/js/2.45aea08f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.45aea08f.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Portfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/FPS_Game.gif": "/Portfolio/static/media/FPS_Game.8288177f.gif",
@@ -44,7 +44,7 @@
     "static/media/skillenza.png": "/Portfolio/static/media/skillenza.7b7a76ef.png",
     "static/media/ssec.png": "/Portfolio/static/media/ssec.8901092d.png",
     "static/media/ssgandhy.png": "/Portfolio/static/media/ssgandhy.894ef0fc.png",
-    "static/media/ufpr.png": "/Portfolio/static/media/ufpr.1f9624ad.png",
+    "static/media/ufpr.png": "/Portfolio/static/media/ufpr.c29c1238.png",
     "static/media/unity.png": "/Portfolio/static/media/unity.81205ed8.png",
     "static/media/valora.jpg": "/Portfolio/static/media/valora.246ad3ed.jpg",
     "static/media/wrighter.jpg": "/Portfolio/static/media/wrighter.02fdae43.jpg"
@@ -52,7 +52,7 @@
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/js/2.45aea08f.chunk.js",
-    "static/css/main.32bff136.chunk.css",
-    "static/js/main.6a02f43f.chunk.js"
+    "static/css/main.cf1dcc85.chunk.css",
+    "static/js/main.d4673f22.chunk.js"
   ]
 }
