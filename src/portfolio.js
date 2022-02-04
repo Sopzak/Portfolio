@@ -508,7 +508,7 @@ const projects = {
         },
         {
           name: "Unity",
-          iconifyClass: "logos:unity",
+          iconifyClass: "simple-icons:unity",
         },
       ],
       source: ["Resume.gif"],
@@ -526,7 +526,7 @@ const projects = {
         },
         {
           name: "Unity",
-          iconifyClass: "logos:unity",
+          iconifyClass: "simple-icons:unity",
         },
       ],
       source: ["llama.gif"],
@@ -574,7 +574,7 @@ const projects = {
         },
         {
           name: "Unity",
-          iconifyClass: "logos:unity",
+          iconifyClass: "simple-icons:unity",
         },
       ],
       source: ["FPS_Game.gif"],
@@ -593,7 +593,7 @@ const projects = {
         },
         {
           name: "Unity",
-          iconifyClass: "logos:unity",
+          iconifyClass: "simple-icons:unity",
         },
       ],
       source: ["campori.gif"],
