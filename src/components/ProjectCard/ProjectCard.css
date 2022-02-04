@@ -6,6 +6,11 @@
   color: rgb(106, 115, 125);
 }
 
+.repo-gif {
+  max-width: 600px;
+  min-width: 300px;
+}
+
 .repo-left-stat {
   -webkit-box-flex: 1;
   flex-grow: 1;

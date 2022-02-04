@@ -58,6 +58,18 @@ function ExperienceCard(props) {
           style={{ color: theme.text }}
         >
           {experience["description"]}
+          {experience["tasksList"].map((task) => {
+            return (
+              <li>
+                <p
+                  className="experience-card-description"
+                  style={{ color: theme.text }}
+                >
+                  -{task}
+                </p>
+              </li>
+            );
+          })}
         </p>
       </div>
     </div>

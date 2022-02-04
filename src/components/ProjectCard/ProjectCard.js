@@ -44,6 +44,17 @@ export default function ProjectCard({ repo, theme }) {
           <div className="repo-details">
             <ProjectLanguages logos={repo.languages} />
           </div>
+          {repo.source.map((image) => {
+            return (
+              <div className="repo-details">
+                <img
+                  className="repo-gif"
+                  src={require(`../../assests/images/${image}`)}
+                  alt={repo.name}
+                />
+              </div>
+            );
+          })}
         </div>
       </Fade>
     </div>

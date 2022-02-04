@@ -6,7 +6,7 @@
   color: white;
 }
 .icon-button {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .icon-button i {
@@ -43,17 +43,7 @@
 }
 
 .github i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #333;
-}
-
-.gitlab i {
-  background-color: #ffcc52;
-  transition: all 0.2s ease-in-out;
-}
-
-.gitlab i:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgb(34, 19, 53);
   box-shadow: 0 5px 15px #333;
 }
 
@@ -87,8 +77,28 @@
   box-shadow: 0 5px 15px #e4405f;
 }
 
+.facebook i {
+  background-color: #2900e0;
+  transition: all 0.2s ease-in-out;
+}
+
+.facebook i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #3700ff;
+}
+
+.youtube i {
+  background-color: #e4405f;
+  transition: all 0.2s ease-in-out;
+}
+
+.youtube i:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #f86945;
+}
+
 /* Media Query */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .social-media-div {
     text-align: center;
   }
