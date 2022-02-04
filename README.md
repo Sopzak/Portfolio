@@ -1,6 +1,8 @@
 # MyPortfolio (Readme will be updated soon)
 
-### My personal clean portfolio.
+### My personal and clean portfolio.
+
+![Portfolio](/src/assests/images/portfolio.gif)
 
 # Sections
 
