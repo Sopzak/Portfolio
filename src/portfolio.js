@@ -560,7 +560,8 @@ const projects = {
     {
       id: "3",
       name: "Spider Attack",
-      url: "https://github.com/harikanani/top-crypto-gainers",
+      url:
+        "https://play.google.com/store/apps/details?id=com.Sopzak.FPSSpiderAttack",
       description:
         "An FPS game for android created in Unity. Available on Google Play Store.",
       languages: [
