@@ -554,10 +554,6 @@ const projects = {
           name: "ReactJS",
           iconifyClass: "logos-react",
         },
-        {
-          name: "TypeScript",
-          iconifyClass: "logos-typescript",
-        },
       ],
       source: ["ciclo.gif"],
     },
