@@ -2,7 +2,11 @@
 
 ![Portfolio](/src/assests/images/portfolio.gif)
 
-### My personal clean portfolio.
+### My personal and clean portfolio.
+
+![Portfolio](/src/assests/images/portfolio.gif)
+
+[Publish version](https://sopzak.github.io/Portfolio/)
 
 # Sections
 
