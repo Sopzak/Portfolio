@@ -16,8 +16,18 @@ const greeting = {
   full_name: "Jesiel Sopzak Campos",
   subTitle:
     " a .Net Full Stack Developer, Unity Enthusiast 🔥. Always learning.",
-  resumeLink:
-    "https://docs.google.com/document/d/1Gt55IC6O3rvq0rfNTggYl3hTE0ZTMmXa/edit?usp=sharing&ouid=106141536438293278350&rtpof=true&sd=true",
+  resumeLink: [
+    {
+      role: "Full Stack Developer",
+      link:
+        "https://docs.google.com/document/d/1Gt55IC6O3rvq0rfNTggYl3hTE0ZTMmXa/edit?usp=sharing&ouid=106141536438293278350&rtpof=true&sd=true",
+    },
+    {
+      role: "Unity Developer",
+      link:
+        "https://docs.google.com/document/d/1GXb1eYL8BU7U9VhXUkHxd6A9FKBuHYcSTCfW-emqOs4/edit?usp=sharing",
+    },
+  ],
   mail: "mailto:je.sopzak@gmail.com",
 };
 

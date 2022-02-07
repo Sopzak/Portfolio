@@ -48,9 +48,13 @@ function Contact(props) {
               <SocialMedia />
               <br />
               <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
-                See my Resume
-              </a>
+              {greeting.resumeLink.map((resume) => {
+                return (
+                  <a {...styles} className="general-btn" href={resume.link}>
+                    {resume.role}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </Fade>
