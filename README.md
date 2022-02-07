@@ -2,6 +2,9 @@
 
 ![Portfolio](/src/assests/images/portfolio.gif)
 
+## Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ElFDp9rD8c4/0.jpg)](https://www.youtube.com/watch?v=ElFDp9rD8c4)
+
 ### My personal and clean portfolio.
 
 [Publish version](https://sopzak.github.io/Portfolio/)
