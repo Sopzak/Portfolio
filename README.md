@@ -3,7 +3,7 @@
 ![Portfolio](/src/assests/images/portfolio.gif)
 
 ## Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ElFDp9rD8c4/0.jpg)](https://www.youtube.com/watch?v=ElFDp9rD8c4)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/3I1PzlAJnRI/0.jpg)](https://www.youtube.com/watch?v=3I1PzlAJnRI)
 
 ### My personal and clean portfolio.
 
