@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
+import { greeting, contactPageData, calendarInfo } from "../../portfolio.js";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
@@ -48,6 +48,12 @@ function Contact(props) {
               <SocialMedia />
               <br />
               <br />
+              <p
+                className="contact-header-detail-text subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                Resume to download:
+              </p>
               {greeting.resumeLink.map((resume) => {
                 return (
                   <a {...styles} className="general-btn" href={resume.link}>
@@ -55,6 +61,22 @@ function Contact(props) {
                   </a>
                 );
               })}
+              <br />
+              <br />
+              <br />
+              <p
+                className="contact-header-detail-text subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                {calendarInfo.calendarHeader}
+              </p>
+              <a
+                {...styles}
+                className="general-btn"
+                href={calendarInfo.calendarLink}
+              >
+                {calendarInfo.calendarTitle}
+              </a>
             </div>
           </div>
         </Fade>

@@ -31,6 +31,13 @@ const greeting = {
   mail: "mailto:je.sopzak@gmail.com",
 };
 
+const calendarInfo = {
+  calendarHeader:
+    "You can also check my availability and schedule a meeting through the button below.",
+  calendarTitle: "Booking page",
+  calendarLink: "https://calendly.com/jesopzak",
+};
+
 const socialMediaLinks = {
   /* Your Social Media Link */
   github: "https://github.com/Sopzak/",
@@ -611,6 +618,7 @@ const projects = {
 export {
   settings,
   greeting,
+  calendarInfo,
   socialMediaLinks,
   skills,
   degrees,
