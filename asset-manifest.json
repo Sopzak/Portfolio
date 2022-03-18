@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.640b8b9e.chunk.css",
-    "main.js": "/Portfolio/static/js/main.eafd2602.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.eafd2602.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.1389f4a5.chunk.css",
+    "main.js": "/Portfolio/static/js/main.fa69f6f3.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.fa69f6f3.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
-    "static/js/2.ed7bd6b6.chunk.js": "/Portfolio/static/js/2.ed7bd6b6.chunk.js",
-    "static/js/2.ed7bd6b6.chunk.js.map": "/Portfolio/static/js/2.ed7bd6b6.chunk.js.map",
+    "static/js/2.14846846.chunk.js": "/Portfolio/static/js/2.14846846.chunk.js",
+    "static/js/2.14846846.chunk.js.map": "/Portfolio/static/js/2.14846846.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.1d54771b8ad8cc7292d687fd5bb3b717.js": "/Portfolio/precache-manifest.1d54771b8ad8cc7292d687fd5bb3b717.js",
+    "precache-manifest.82c7a983aac26427cca5ab8d05c06886.js": "/Portfolio/precache-manifest.82c7a983aac26427cca5ab8d05c06886.js",
     "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.640b8b9e.chunk.css.map": "/Portfolio/static/css/main.640b8b9e.chunk.css.map",
-    "static/js/2.ed7bd6b6.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.ed7bd6b6.chunk.js.LICENSE.txt",
+    "static/css/main.1389f4a5.chunk.css.map": "/Portfolio/static/css/main.1389f4a5.chunk.css.map",
+    "static/js/2.14846846.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.14846846.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Portfolio/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/FPS_Game.gif": "/Portfolio/static/media/FPS_Game.8288177f.gif",
     "static/media/Resume.gif": "/Portfolio/static/media/Resume.e148de0f.gif",
@@ -29,6 +29,7 @@
     "static/media/googleAssistant.jpg": "/Portfolio/static/media/googleAssistant.0c8a4c11.jpg",
     "static/media/gtu.png": "/Portfolio/static/media/gtu.3d9465c3.png",
     "static/media/hackathon1.svg": "/Portfolio/static/media/hackathon1.7a2dbf7a.svg",
+    "static/media/hiringmeclan.gif": "/Portfolio/static/media/hiringmeclan.e1e00d11.gif",
     "static/media/iit.png": "/Portfolio/static/media/iit.36d7942a.png",
     "static/media/ino.png": "/Portfolio/static/media/ino.ccf88661.png",
     "static/media/jesiel.jpg": "/Portfolio/static/media/jesiel.31c4c581.jpg",
@@ -52,8 +53,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
-    "static/js/2.ed7bd6b6.chunk.js",
-    "static/css/main.640b8b9e.chunk.css",
-    "static/js/main.eafd2602.chunk.js"
+    "static/js/2.14846846.chunk.js",
+    "static/css/main.1389f4a5.chunk.css",
+    "static/js/main.fa69f6f3.chunk.js"
   ]
 }
