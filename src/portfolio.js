@@ -612,6 +612,24 @@ const projects = {
       ],
       source: ["campori.gif"],
     },
+    {
+      id: "6",
+      name: "Hiring Me Clan",
+      url: "https://github.com/Sopzak/HiringMeCLAN",
+      description:
+        "This game is about a guy who is looking for a job in Victoria BC, and he goes through all the interview processes. It is a text based RPG and all dialogs are configurable and it is possible to change the characters in the code.",
+      languages: [
+        {
+          name: "C#",
+          iconifyClass: "vscode-icons:file-type-csharp2",
+        },
+        {
+          name: "Unity",
+          iconifyClass: "simple-icons:unity",
+        },
+      ],
+      source: ["hiringmeclan.gif"],
+    },
   ],
 };
 
