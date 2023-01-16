@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData, calendarInfo } from "../../portfolio.js";
+import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
@@ -62,21 +62,6 @@ function Contact(props) {
                 );
               })}
               <br />
-              <br />
-              <br />
-              <p
-                className="contact-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {calendarInfo.calendarHeader}
-              </p>
-              <a
-                {...styles}
-                className="general-btn"
-                href={calendarInfo.calendarLink}
-              >
-                {calendarInfo.calendarTitle}
-              </a>
             </div>
           </div>
         </Fade>

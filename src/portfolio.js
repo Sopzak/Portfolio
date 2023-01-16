@@ -31,13 +31,6 @@ const greeting = {
   mail: "mailto:je.sopzak@gmail.com",
 };
 
-const calendarInfo = {
-  calendarHeader:
-    "You can also check my availability and schedule a meeting through the button below.",
-  calendarTitle: "Booking page",
-  calendarLink: "https://calendly.com/jesopzak",
-};
-
 const socialMediaLinks = {
   /* Your Social Media Link */
   github: "https://github.com/Sopzak/",
@@ -58,7 +51,7 @@ const skills = {
         "⚡ Building responsive website front end using ReactJS",
         "⚡ Creating application backend in C# or Node js",
         "⚡ Integration of third party services such as Firebase/ AWS",
-        "⚡ Creating games and VR interfaces (I am learning VR) with Unity 3D",
+        "⚡ Creating games with Unity 3D",
       ],
       softwareSkills: [
         {
@@ -86,13 +79,6 @@ const skills = {
             color: "#F7DF1E",
           },
         },
-        /*{
-          skillName: "PHP",
-          fontAwesomeClassname: "simple-icons:php",
-          style: {
-            color: "#7377AD",
-          },
-        },*/
         {
           skillName: ".Net C#",
           fontAwesomeClassname: "vscode-icons:file-type-csharp2",
@@ -251,11 +237,13 @@ const skills = {
       ],
     },
     {
-      title: "Cloud Infra-Architecture And Database",
+      title: "Cloud Infra-Architecture",
+      title2: "And Database",
       fileName: "CloudInfraImg",
       skills: [
         "⚡ Experience working on cloud platforms",
         "⚡ Experience with Continuous Integration",
+        "⚡ Experience with SQL Server, Oracle, Postgres and mysql databases",
       ],
       softwareSkills: [
         {
@@ -430,17 +418,37 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Back End C# Developer",
+          company: "Lidya",
+          company_url: "https://www.lidya.info/",
+          logo_path: "lidya.jpg",
+          duration: "Apr 2022 - present",
+          location: "Remote",
+          description:
+            "Lidya is a fintech company founded in Nigeria in 2016 and headquartered in the US. Today, we have teams based in Portugal, Nigeria and the US and we are the leading digital financier of SMEs in Nigeria.",
+          tasksList: [
+            "Customize a Financial Support API by creating new functionality and expanding the current code to adapt to market changes, always focusing on quality, security and maintainability.",
+            "Create scalable code using .NET programming languages.",
+            "Create, test and deploy applications and systems.",
+            "Develop documentation throughout the software development lifecycle (SDLC).",
+          ],
+          color: "#ee3c26",
+        },
+        {
           title: "Senior Systems Analyst",
           company: "CELEPAR",
           company_url: "https://www.celepar.pr.gov.br/",
           logo_path: "celepar.png",
-          duration: "Oct 2016 - present",
-          location: "Office / Work From Home",
+          duration: "Oct 2016 - Mai 2022",
+          location: "Office / Remote",
           description:
-            "The company CELEPAR is one of the most important public IT companies in Brazil, with more than 11 million indirect users in the state of Paraná.",
+            "CELEPAR is one of the most important public IT companies in Brazil, with more than 11 million indirect users in the state of Paraná.",
           tasksList: [
             "Develop and maintain the taxpayer financial registry of the State of Paraná using .Net, C#, ASP, HTML, Javascript, Oracle and SQL Server, delivering solutions used by millions of people in southern Brazil.",
-            "Lead a small team with different skills with AGILE methodology and SCRUM in the last 4 years, of which the last was remotely.",
+            "Maintain a great system, make analysis with the client, and give technical advice on business decisions.",
+            "Promote integration with other systems and provide and maintain large volumes of data (over 3 millions of clients and 200 thousand actives clients).",
+            "Create and Maintain endpoints for an internal API with restfull arcteture.",
+            "Work with different technologies, and tasks with higth complexities.",
           ],
           color: "#0071C5",
         },
@@ -517,7 +525,7 @@ const projects = {
       name: "Resume Delivery",
       url: "https://github.com/Sopzak/ResumeDelivery",
       description:
-        "A game about a character who needs to send my resume to a game studio in Halifax",
+        "A game about a character who needs to send my resume to a game studio",
       languages: [
         {
           name: "C#",
@@ -612,31 +620,12 @@ const projects = {
       ],
       source: ["campori.gif"],
     },
-    {
-      id: "6",
-      name: "Hiring Me Clan",
-      url: "https://github.com/Sopzak/HiringMeCLAN",
-      description:
-        "This game is about a guy who is looking for a job in Victoria BC, and he goes through all the interview processes. It is a text based RPG and all dialogs are configurable and it is possible to change the characters in the code.",
-      languages: [
-        {
-          name: "C#",
-          iconifyClass: "vscode-icons:file-type-csharp2",
-        },
-        {
-          name: "Unity",
-          iconifyClass: "simple-icons:unity",
-        },
-      ],
-      source: ["hiringmeclan.gif"],
-    },
   ],
 };
 
 export {
   settings,
   greeting,
-  calendarInfo,
   socialMediaLinks,
   skills,
   degrees,

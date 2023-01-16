@@ -63,6 +63,9 @@ function SkillSection(props) {
                   <h1 className="skills-heading" style={{ color: theme.text }}>
                     {skill.title}
                   </h1>
+                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                    {skill.title2}
+                  </h1>
                 </Fade>
                 <Fade left duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
