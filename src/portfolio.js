@@ -13,7 +13,7 @@ const greeting = {
   title2: "Jesiel Sopzak",
   logo_name: "je.sopzak()",
   nickname: "@jesopzak",
-  full_name: "Jesiel Sopzak Campossss",
+  full_name: "Jesiel Sopzak Campos",
   subTitle:
     " a .Net Full Stack Developer, Unity Enthusiast 🔥. Always learning.",
   resumeLink: [
