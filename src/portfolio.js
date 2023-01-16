@@ -10,10 +10,10 @@ const settings = {
 //Home Page
 const greeting = {
   title: "Hello 👋.",
-  title2: "Jesiel Sopzak C",
+  title2: "Jesiel Sopzak",
   logo_name: "je.sopzak()",
   nickname: "@jesopzak",
-  full_name: "Jesiel Sopzak Campos",
+  full_name: "Jesiel Sopzak Campossss",
   subTitle:
     " a .Net Full Stack Developer, Unity Enthusiast 🔥. Always learning.",
   resumeLink: [
