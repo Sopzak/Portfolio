@@ -6,6 +6,14 @@ import { style } from "glamor";
 
 export default function ProjectCard({ repo, theme }) {
   function openRepoinNewTab(url) {
+    if (!url) {
+      return;
+    }
+    // Check if the URL starts with 'http' or 'https'
+    if (!/^https?:\/\//i.test(url)) {
+      // If not, prepend 'http://' to the URL
+      return;
+    }
     var win = window.open(url, "_blank");
     win.focus();
   }

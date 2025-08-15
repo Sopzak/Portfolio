@@ -14,18 +14,12 @@ const greeting = {
   logo_name: "je.sopzak()",
   nickname: "@jesopzak",
   full_name: "Jesiel Sopzak Campos",
-  subTitle:
-    " a .Net Full Stack Developer, Unity Enthusiast 🔥. Always learning.",
+  subTitle: " Full Stack Developer | Mobile, Web & Backend.",
   resumeLink: [
     {
       role: "Full Stack Developer",
       link:
-        "https://docs.google.com/document/d/1Gt55IC6O3rvq0rfNTggYl3hTE0ZTMmXa/edit?usp=sharing&ouid=106141536438293278350&rtpof=true&sd=true",
-    },
-    {
-      role: "Unity Developer",
-      link:
-        "https://docs.google.com/document/d/1GXb1eYL8BU7U9VhXUkHxd6A9FKBuHYcSTCfW-emqOs4/edit?usp=sharing",
+        "https://docs.google.com/document/d/12cYEppa2oNEenWrHDdSwwq1VXX90JY57/edit?usp=sharing&ouid=106141536438293278350&rtpof=true&sd=true",
     },
   ],
   mail: "mailto:je.sopzak@gmail.com",
@@ -48,37 +42,13 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-        "⚡ Building responsive website front end using ReactJS",
+        "⚡ Building responsive website front end using React, Angular or Ionic",
         "⚡ Creating application backend in C# or Node js",
-        "⚡ Integration of third party services such as Firebase/ AWS",
+        "⚡ Integration of third party services such as Firebase, AWS, AZURE, etc.",
+        "⚡ Creating mobile applications with React Native or Unity",
         "⚡ Creating games with Unity 3D",
       ],
       softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          src: "",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          src: "",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          src: "",
-          style: {
-            backgroundColor: "#FFFFFF",
-            color: "#F7DF1E",
-          },
-        },
         {
           skillName: ".Net C#",
           fontAwesomeClassname: "vscode-icons:file-type-csharp2",
@@ -112,21 +82,46 @@ const skills = {
             color: "#61DAFB",
           },
         },
-        {
+        /*{
           skillName: "NodeJS",
           fontAwesomeClassname: "simple-icons:node-dot-js",
           src: "",
           style: {
             color: "#339933",
           },
+        },*/
+        {
+          skillName: "HTML5",
+          fontAwesomeClassname: "simple-icons:html5",
+          src: "",
+          style: {
+            color: "#E34F26",
+          },
         },
-        /*{
+        {
+          skillName: "CSS3",
+          fontAwesomeClassname: "fa-css3",
+          src: "",
+          style: {
+            color: "#1572B6",
+          },
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          src: "",
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#F7DF1E",
+          },
+        },
+        {
           skillName: "NPM",
           fontAwesomeClassname: "simple-icons:npm",
           style: {
             color: "#CB3837",
           },
-        },*/
+        },
         /*{
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
@@ -134,20 +129,34 @@ const skills = {
             color: "#439743",
           },
         },*/
-        // {
-        //   skillName: "GraphQL",
-        //   fontAwesomeClassname: "simple-icons:graphql",
-        //   style: {
-        //     color: "#DE33A6",
-        //   },
-        // },
-        /*{
+        {
+          skillName: "GraphQL",
+          fontAwesomeClassname: "simple-icons:graphql",
+          style: {
+            color: "#DE33A6",
+          },
+        },
+        {
           skillName: "Android",
           fontAwesomeClassname: "simple-icons:android",
           style: {
             color: "#3DDC84",
           },
-        },*/
+        },
+        {
+          skillName: "IOS",
+          fontAwesomeClassname: "simple-icons:apple",
+          style: {
+            color: "#000000",
+          },
+        },
+        {
+          skillName: "Ionic",
+          fontAwesomeClassname: "simple-icons:ionic",
+          style: {
+            color: "#3880FF",
+          },
+        },
         /*{
           skillName: "Java",
           fontAwesomeClassname: "simple-icons:java",
@@ -244,6 +253,7 @@ const skills = {
         "⚡ Experience working on cloud platforms",
         "⚡ Experience with Continuous Integration",
         "⚡ Experience with SQL Server, Oracle, Postgres and mysql databases",
+        "⚡ Experience with No Sql databases as Firebase and MongoDB",
       ],
       softwareSkills: [
         {
@@ -281,11 +291,39 @@ const skills = {
             color: "#4479A1",
           },
         },
-        /*{
+        {
           skillName: "MongoDB",
           fontAwesomeClassname: "simple-icons:mongodb",
           style: {
             color: "#47A248",
+          },
+        },
+        {
+          skillName: "PostgreSQL",
+          fontAwesomeClassname: "simple-icons:postgresql",
+          style: {
+            color: "#336791",
+          },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: {
+            color: "#F05032",
+          },
+        },
+        {
+          skillName: "Azure",
+          fontAwesomeClassname: "simple-icons:azuredevops",
+          style: {
+            color: "#0078D4",
+          },
+        },
+        {
+          skillName: "GitLab",
+          fontAwesomeClassname: "simple-icons:gitlab",
+          style: {
+            color: "#FC6D26",
           },
         },
         {
@@ -295,13 +333,6 @@ const skills = {
             color: "#1488C6",
           },
         },
-        {
-          skillName: "GitHub Actions",
-          fontAwesomeClassname: "simple-icons:githubactions",
-          style: {
-            color: "#5b77ef",
-          },
-        },*/
       ],
     },
   ],
@@ -309,6 +340,21 @@ const skills = {
 
 const degrees = {
   degrees: [
+    {
+      title: "CS50's Introduction to Computer Science",
+      subtitle: "Harvard University",
+      logo_path: "harvard.png",
+      alt_name: "Harvard University",
+      duration: "Jan - Apr 2025",
+      descriptions: [
+        "⚡ I have learned the fundamentals of computer science and programming.",
+        "⚡ I have learned how to think algorithmically and solve programming problems efficiently.",
+        "⚡ I have learned how to use languages such as C, Python, SQL, and JavaScript.",
+        "⚡ I have learned how to use tools such as Git.",
+      ],
+      website_link:
+        "https://certificates.cs50.io/9d4af465-80b4-4019-ab73-911ca787bcfe.pdf?size=letter",
+    },
     {
       title: "Federal University of State of Parana",
       subtitle: "Technologist in Information Systems",
@@ -411,24 +457,41 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I am a System Analyst with 14 years of experience in developing new features and apps for the most diversified products and company by using variety of technologies like ASP.Net, C#, React, Node.js, Oracle, Sql Servers. I am looking for the opportunity to collaborate as a Full Stack Developer where I can use my skills to build the most high quality applications focusing on the company's needs and interests.",
+    "I am a System Analyst with 10+ years of experience in developing new features and apps for the most diversified products and company by using variety of technologies like ASP.Net, C#, React, Node.js, Oracle, Sql Servers. I am looking for the opportunity to collaborate as a Full Stack Developer where I can use my skills to build the most high quality applications focusing on the company's needs and interests.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
         {
+          title: "Software Engineer",
+          company: "Keelings",
+          company_url: "https://www.keelings.com/",
+          logo_path: "keelings_logo.png",
+          duration: "Fev 2024 - Present",
+          location: "Dublin - Ireland",
+          description:
+            "Keelings is a leading Irish food company, with a strong focus on the supply chain management, traceability, and quality assurance.",
+          tasksList: [
+            "Develop and maintain software solutions for the food industry, focusing on supply chain management, traceability, and quality assurance.",
+            "Developed a fruit and vegetable quality control application from scratch, with complete creative and development freedom. As a coder, I created the database in SQL Server, an API in C# and .Net Core, a website and an mobile app in Angular and Ionic, and used Fast Reports for reporting. I also developed integrations with Drop Box and emails with the generated photos and reports, as well as integration with existing ERP systems.",
+            "Develop Applications using C#, VB.Net, React, Ionic, and Azure.",
+            "Participate in code reviews, testing, and debugging to ensure high-quality software delivery.",
+          ],
+          color: "#0071C5",
+        },
+        {
           title: "Back End C# Developer",
           company: "Lidya",
           company_url: "https://www.lidya.info/",
           logo_path: "lidya.jpg",
-          duration: "Apr 2022 - present",
-          location: "Remote",
+          duration: "Apr 2022 - Out 2023",
+          location: "Porto - Portugal",
           description:
-            "Lidya is a fintech company founded in Nigeria in 2016 and headquartered in the US. Today, we have teams based in Portugal, Nigeria and the US and we are the leading digital financier of SMEs in Nigeria.",
+            "Lidya is a fintech operating in Nigeria, Czech Republic, Poland, and Portugal.",
           tasksList: [
             "Customize a Financial Support API by creating new functionality and expanding the current code to adapt to market changes, always focusing on quality, security and maintainability.",
-            "Create scalable code using .NET programming languages.",
+            "Create scalable code using .NET and Azure.",
             "Create, test and deploy applications and systems.",
             "Develop documentation throughout the software development lifecycle (SDLC).",
           ],
@@ -440,7 +503,7 @@ const experience = {
           company_url: "https://www.celepar.pr.gov.br/",
           logo_path: "celepar.png",
           duration: "Oct 2016 - Mai 2022",
-          location: "Office / Remote",
+          location: "Curitiba - Brazil",
           description:
             "CELEPAR is one of the most important public IT companies in Brazil, with more than 11 million indirect users in the state of Paraná.",
           tasksList: [
@@ -458,7 +521,7 @@ const experience = {
           company_url: "https://www.celepar.pr.gov.br/",
           logo_path: "celepar.png",
           duration: "Jan 2010 - 10/2016",
-          location: "Office",
+          location: "Curitiba - Brazil",
           description: "",
           tasksList: [
             "Created the web front-end in a legacy system with about 40 years, increasing the performance by 300%.",
@@ -476,8 +539,8 @@ const experience = {
           company: "Escola da Fluencia",
           company_url: "https://escoladafluencia.com.br/",
           logo_path: "escoladafluencia.png",
-          duration: "Mar 2021 - Present",
-          location: "Work from Home",
+          duration: "Mar 2021 - Set 2022",
+          location: "Curitiba - Brazil",
           description:
             "English teacher trainee, assisting and developing speak, listening, reading and writing in online classes by zoom. Helping adults to develop another language, opening doors to new opportunities and transforming lives through fluency in English.",
           tasksList: [],
@@ -489,7 +552,7 @@ const experience = {
           company_url: "https://geniuscon.com.br/",
           logo_path: "genius.svg",
           duration: "Set 2021",
-          location: "Work From Home",
+          location: "Curitiba - Brazil",
           tasksList: [],
           description:
             "Mentorship responsibilities were to help students plan the project and discuss ideas.",
@@ -504,7 +567,7 @@ const experience = {
 const projectsHeader = {
   title: "Portfolio",
   description:
-    "My projects make use of a vast variety of latest technology tools. My best experience is to create C# Backend Projects with MVC, ASP.Net and React Project. In my spare time I develop games in Unity and participate in Hackathons to test new technologies. Below are some of my projects.",
+    "A seasoned Full Stack Developer with experience designing and implementing robust server-side architectures that lead to increased system stability and improved overall performance, optimizing database performance for faster query times and more efficient data storage, and delivering scalable and secure web applications.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -522,6 +585,74 @@ const projects = {
   data: [
     {
       id: "0",
+      name: "Cherry Blossom Cafe",
+      url: "https://cherryblossomcafe.ie/",
+      description:
+        "A website for a cafe in Nenagh, Ireland, built with HTML, Javascript and Wordpress.",
+      languages: [
+        {
+          name: "HTML5",
+          iconifyClass: "vscode-icons:file-type-html",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "vscode-icons:file-type-css",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "Wordpress",
+          iconifyClass: "simple-icons:wordpress",
+        },
+      ],
+      source: ["cherryblossom.gif"],
+    },
+    {
+      id: "1",
+      name: "Gym App",
+      description:
+        "A mobile app for a gym in Ireland, built with React Native, Ionic and MonoDB.",
+      languages: [
+        {
+          name: "React Native",
+          iconifyClass: "logos:react",
+        },
+        {
+          name: "Ionic",
+          iconifyClass: "simple-icons:ionic",
+        },
+        {
+          name: "MongoDB",
+          iconifyClass: "simple-icons:mongodb",
+        },
+      ],
+      source: ["gym app.gif"],
+    },
+    {
+      id: "3",
+      name: "Wolf App",
+      description:
+        "A mobile app for a online course in Ireland, built with React Native, Ionic and MonoDB.",
+      languages: [
+        {
+          name: "React Native",
+          iconifyClass: "logos:react",
+        },
+        {
+          name: "Ionic",
+          iconifyClass: "simple-icons:ionic",
+        },
+        {
+          name: "MongoDB",
+          iconifyClass: "simple-icons:mongodb",
+        },
+      ],
+      source: ["wolf app.gif"],
+    },
+    {
+      id: "2",
       name: "Resume Delivery",
       url: "https://github.com/Sopzak/ResumeDelivery",
       description:
@@ -539,7 +670,7 @@ const projects = {
       source: ["Resume.gif"],
     },
     {
-      id: "2",
+      id: "4",
       name: "Llamas's Game",
       url: "https://master.d15c5dgfiphued.amplifyapp.com/",
       description:
@@ -557,7 +688,7 @@ const projects = {
       source: ["llama.gif"],
     },
     {
-      id: "1",
+      id: "5",
       name: "Cycle of the Extraordinary ",
       url: "https://github.com/Sopzak/ExtraordinaryCycle",
       description:
@@ -583,10 +714,8 @@ const projects = {
       source: ["ciclo.gif"],
     },
     {
-      id: "3",
+      id: "6",
       name: "Spider Attack",
-      url:
-        "https://play.google.com/store/apps/details?id=com.Sopzak.FPSSpiderAttack",
       description:
         "An FPS game for android created in Unity. Available on Google Play Store.",
       languages: [
@@ -602,10 +731,8 @@ const projects = {
       source: ["FPS_Game.gif"],
     },
     {
-      id: "5",
+      id: "7",
       name: "Campori Game",
-      url:
-        "https://play.google.com/store/apps/details?id=br.com.SopzakSoftware.PathfinderRum",
       description:
         "A 2D android game, made in Unity that was a hit with over 25k downloads (my first Unity project in 2014).",
       languages: [
