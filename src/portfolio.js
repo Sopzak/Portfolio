@@ -82,14 +82,14 @@ const skills = {
             color: "#61DAFB",
           },
         },
-        /*{
+        {
           skillName: "NodeJS",
           fontAwesomeClassname: "simple-icons:node-dot-js",
           src: "",
           style: {
             color: "#339933",
           },
-        },*/
+        },
         {
           skillName: "HTML5",
           fontAwesomeClassname: "simple-icons:html5",
@@ -236,13 +236,13 @@ const skills = {
             color: "#E94E32",
           },
         },
-        {
+        */ {
           skillName: "Python",
           fontAwesomeClassname: "simple-icons:python",
           style: {
             color: "#3776AB",
           },
-        },*/
+        },
       ],
     },
     {
