@@ -11,6 +11,16 @@
   box-shadow: 0 5px 15px #e2405f;
 }
 
+.experience-section-title {
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.experience-section {
+  margin: 16px;
+}
+
 .accord-panel {
   font-family: "Google Sans Regular";
 }
