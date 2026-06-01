@@ -3,8 +3,6 @@ import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import { motion } from "framer-motion";
 
-import { style } from "glamor";
-
 export default function ProjectCard({ repo, theme }) {
   function openRepoinNewTab(url) {
     if (!url) {
@@ -67,10 +65,8 @@ export default function ProjectCard({ repo, theme }) {
                 <img
                   className="repo-gif"
                   src={
-                    new URL(
-                      `../../assets/images/${image}`,
-                      import.meta.url
-                    ).href
+                    new URL(`../../assets/images/${image}`, import.meta.url)
+                      .href
                   }
                   alt={repo.name}
                 />
@@ -79,7 +75,6 @@ export default function ProjectCard({ repo, theme }) {
           })}
         </div>
       </motion.div>
-
     </div>
   );
 }

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.jsx";
-import { style } from "glamor";
 
 function Header(props) {
   const theme = props.theme;

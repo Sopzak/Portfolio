@@ -1,7 +1,6 @@
 import React from "react";
 import "./DegreeCard.css";
 import { motion } from "framer-motion";
-import { style } from "glamor";
 
 function DegreeCard(props) {
   const degree = props.degree;
@@ -84,10 +83,8 @@ function DegreeCard(props) {
             borderRadius: "40px",
           }}
           src={
-            new URL(
-              `../../assets/images/${degree.logo_path}`,
-              import.meta.url
-            ).href
+            new URL(`../../assets/images/${degree.logo_path}`, import.meta.url)
+              .href
           }
           alt={degree.alt_name}
         />
@@ -123,7 +120,11 @@ function DegreeCard(props) {
 
         <div className="body-content">
           {degree.descriptions.map((sentence) => (
-            <p className="content-list" style={{ color: theme.text }} key={sentence}>
+            <p
+              className="content-list"
+              style={{ color: theme.text }}
+              key={sentence}
+            >
               {sentence}
             </p>
           ))}

@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.jsx";
-import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
 
@@ -38,7 +37,7 @@ function Contact(props) {
                 src={
                   new URL(
                     `../../assets/images/${ContactData["profile_image_path"]}`,
-                    import.meta.url
+                    import.meta.url,
                   ).href
                 }
                 alt=""

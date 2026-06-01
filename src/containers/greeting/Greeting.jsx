@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 import FeelingProud from "./FeelingProud";
-import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;

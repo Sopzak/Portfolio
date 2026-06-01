@@ -1,7 +1,6 @@
 import React from "react";
 import "./CertificationCard.css";
 import { motion } from "framer-motion";
-import { style } from "glamor";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
@@ -40,7 +39,7 @@ function CertificationCard(props) {
                 src={
                   new URL(
                     `../../assets/images/${certificate.logo_path}`,
-                    import.meta.url
+                    import.meta.url,
                   ).href
                 }
                 alt={certificate.alt_name}

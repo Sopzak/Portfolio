@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import { projectsHeader, projects } from "../../portfolio.jsx";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
-import { style } from "glamor";
 
 function Projects(props) {
   const theme = props.theme;
