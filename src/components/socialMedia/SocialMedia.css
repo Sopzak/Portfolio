@@ -2,102 +2,85 @@
   font-size: 2em;
 }
 
-.icon-button i {
-  color: white;
-}
 .icon-button {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.icon-button i {
+.icon-button .iconify {
+  color: white;
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
   font-size: 1.3rem;
   height: 2.6rem;
-  line-height: 2.6rem;
-  margin: 0 5px;
-  position: relative;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
   width: 2.6rem;
-  margin-bottom: 10px;
+  line-height: 2.6rem;
+  text-align: center;
+  user-select: none;
+  margin: 0 5px;
 }
 
-.linkedin i {
+/* LINKEDIN */
+.linkedin .iconify {
   background-color: #0e76a8;
   transition: all 0.2s ease-in-out;
 }
-
-.linkedin i:hover {
-  color: rgba(255, 255, 255, 1);
+.linkedin .iconify:hover {
+  color: #fff;
   box-shadow: 0 5px 15px #0e76a8;
 }
 
-.github i {
+/* GITHUB */
+.github .iconify {
   background-color: #333;
   transition: all 0.2s ease-in-out;
 }
-
-.github i:hover {
-  color: rgb(34, 19, 53);
+.github .iconify:hover {
+  color: #fff;
   box-shadow: 0 5px 15px #333;
 }
 
-.google i {
+/* GOOGLE */
+.google .iconify {
   background-color: #ea4335;
   transition: all 0.2s ease-in-out;
 }
-
-.google i:hover {
-  color: rgba(255, 255, 255, 1);
+.google .iconify:hover {
+  color: #fff;
   box-shadow: 0 5px 15px #ea4335;
 }
 
-.twitter i {
-  background-color: #1da1f2;
-  transition: all 0.2s ease-in-out;
-}
-
-.twitter i:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #1da1f2;
-}
-
-.instagram i {
+/* INSTAGRAM */
+.instagram .iconify {
   background-color: #e4405f;
   transition: all 0.2s ease-in-out;
 }
-
-.instagram i:hover {
-  color: rgba(255, 255, 255, 1);
+.instagram .iconify:hover {
+  color: #fff;
   box-shadow: 0 5px 15px #e4405f;
 }
 
-.facebook i {
+/* FACEBOOK */
+.facebook .iconify {
   background-color: #2900e0;
   transition: all 0.2s ease-in-out;
 }
-
-.facebook i:hover {
-  color: rgba(255, 255, 255, 1);
+.facebook .iconify:hover {
+  color: #fff;
   box-shadow: 0 5px 15px #3700ff;
 }
 
-.youtube i {
+/* YOUTUBE */
+.youtube .iconify {
   background-color: #e4405f;
   transition: all 0.2s ease-in-out;
 }
-
-.youtube i:hover {
-  color: rgba(255, 255, 255, 1);
+.youtube .iconify:hover {
+  color: #fff;
   box-shadow: 0 5px 15px #f86945;
 }
 
-/* Media Query */
+/* RESPONSIVO */
 @media (max-width: 500px) {
   .social-media-div {
     text-align: center;

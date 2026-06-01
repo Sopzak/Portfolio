@@ -85,8 +85,6 @@ function Header(props) {
                 to="/home"
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
-                onClick={() => console.log("Clicou em /home")}
-
               >
                 Home
               </NavLink>
@@ -95,7 +93,7 @@ function Header(props) {
               <NavLink
                 className="ec"
                 to="/education"
-                onClick={() => console.log("Clicou em /education")}
+                
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
@@ -106,7 +104,6 @@ function Header(props) {
               <NavLink
                 className="xp"
                 to="/experience"
-                
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >

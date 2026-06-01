@@ -4,13 +4,13 @@
 const settings = {
   isSplash: true, // Change this to true if you want to use the splash screen.
   useCustomCursor: false, // Change this to false if you want the good'ol cursor
-  googleTrackingID: "UA-30891377-3",
+  //googleTrackingID: "UA-30891377-3",
 };
 
 //Home Page
 const greeting = {
   title: "Hello 👋.",
-  title2: "Jesiel Sopzak",
+  title2: "Jesiel Sopzak Campos",
   logo_name: "je.sopzak()",
   nickname: "@jesopzak",
   full_name: "Jesiel Sopzak Campos",
@@ -32,7 +32,6 @@ const socialMediaLinks = {
   gmail: "je.sopzak@gmail.com",
   facebook: "https://www.facebook.com/je.sopzak/",
   instagram: "https://www.instagram.com/jesopzak/",
-  youtube: "https://www.youtube.com/channel/UCltmGwbi67ESMSejVFIDuyg",
 };
 
 const skills = {
@@ -345,7 +344,7 @@ const degrees = {
       subtitle: "Harvard University",
       logo_path: "harvard.png",
       alt_name: "Harvard University",
-      duration: "Jan - Apr 2025",
+      duration: "2025",
       descriptions: [
         "⚡ I have learned the fundamentals of computer science and programming.",
         "⚡ I have learned how to think algorithmically and solve programming problems efficiently.",
@@ -457,7 +456,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I am a System Analyst with 10+ years of experience in developing new features and apps for the most diversified products and company by using variety of technologies like ASP.Net, C#, React, Node.jsx, Oracle, Sql Servers. I am looking for the opportunity to collaborate as a Full Stack Developer where I can use my skills to build the most high quality applications focusing on the company's needs and interests.",
+    "I am a System Analyst with 15+ years of experience in developing new features and apps for the most diversified products and company by using variety of technologies like ASP.Net, C#, React, Node.jsx, Oracle, Sql Servers. I am looking for the opportunity to collaborate as a Full Stack Developer where I can use my skills to build the most high quality applications focusing on the company's needs and interests.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -468,7 +467,7 @@ const experience = {
           company: "Keelings",
           company_url: "https://www.keelings.com/",
           logo_path: "keelings_logo.png",
-          duration: "Fev 2024 - Present",
+          duration: "Fev 2024 - Dez 2025",
           location: "Dublin - Ireland",
           description:
             "Keelings is a leading Irish food company, with a strong focus on the supply chain management, traceability, and quality assurance.",
@@ -586,7 +585,6 @@ const projects = {
     {
       id: "0",
       name: "Cherry Blossom Cafe",
-      url: "https://cherryblossomcafe.ie/",
       description:
         "A website for a cafe in Nenagh, Ireland, built with HTML, Javascript and Wordpress.",
       languages: [
@@ -672,7 +670,6 @@ const projects = {
     {
       id: "4",
       name: "Llamas's Game",
-      url: "https://master.d15c5dgfiphued.amplifyapp.com/",
       description:
         "A game where you have to place as Llamas in the pen in less than 2 minutes. This game was made to run on the web.",
       languages: [
