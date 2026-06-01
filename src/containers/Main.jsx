@@ -1,80 +1,65 @@
 import React from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+
 import { settings } from "../portfolio.jsx";
 
 export default function Main(propss) {
-console.log("Main.jsx montou. URL atual:", window.location.href);
+  const { theme, setTheme } = propss;
 
   return (
-    <Switch>
-      {settings.isSplash ? (
-        <Route
-          exact
-          path="/"
-          render={(props) => (
-            <Splash {...props} theme={propss.theme} setTheme={propss.setTheme} />
-          )}
-        />
-      ) : (
-        <Route
-          exact
-          path="/"
-          render={(props) => (
-            <Home {...props} theme={propss.theme} setTheme={propss.setTheme} />
-          )}
-        />
-      )}
+    <Routes>
+      {/* Rota inicial depende do settings.isSplash */}
+      <Route
+        path="/"
+        element={
+          settings.isSplash ? (
+            <Splash theme={theme} setTheme={setTheme} />
+          ) : (
+            <Home theme={theme} setTheme={setTheme} />
+          )
+        }
+      />
 
+      {/* Rotas normais */}
       <Route
         path="/home"
-        render={(props) => (
-          <Home {...props} theme={propss.theme} setTheme={propss.setTheme} />
-        )}
+        element={<Home theme={theme} setTheme={setTheme} />}
       />
 
       <Route
         path="/experience"
-        render={(props) => (
-          <Experience {...props} theme={propss.theme} setTheme={propss.setTheme} />
-        )}
+        element={<Experience theme={theme} setTheme={setTheme} />}
       />
 
       <Route
         path="/education"
-        render={(props) => (
-          <Education {...props} theme={propss.theme} setTheme={propss.setTheme} />
-        )}
+        element={<Education theme={theme} setTheme={setTheme} />}
       />
 
       <Route
         path="/contact"
-        render={(props) => (
-          <Contact {...props} theme={propss.theme} setTheme={propss.setTheme} />
-        )}
+        element={<Contact theme={theme} setTheme={setTheme} />}
       />
 
       <Route
         path="/projects"
-        render={(props) => (
-          <Projects {...props} theme={propss.theme} setTheme={propss.setTheme} />
-        )}
+        element={<Projects theme={theme} setTheme={setTheme} />}
       />
 
+      {/* Rota splash opcional */}
       {settings.isSplash && (
         <Route
           path="/splash"
-          render={(props) => (
-            <Splash {...props} theme={propss.theme} setTheme={propss.setTheme} />
-          )}
+          element={<Splash theme={theme} setTheme={setTheme} />}
         />
       )}
-    </Switch>
+    </Routes>
   );
 }
-

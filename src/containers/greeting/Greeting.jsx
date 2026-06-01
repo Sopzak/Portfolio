@@ -4,13 +4,14 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { motion } from "framer-motion";
 
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -21,55 +22,55 @@ export default function Greeting(props) {
 
   return (
     <motion.div
-        className="greet-main"
-        style={{ color: theme.text }}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        id="greeting"
-      >
-        <div className="greeting-main">
-          <div className="greeting-text-div">
-            <div>
-              <h1 className="greeting-text">{greeting.title}</h1>
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
+      className="greet-main"
+      style={{ color: theme.text }}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      id="greeting"
+    >
+      <div className="greeting-main">
+        <div className="greeting-text-div">
+          <div>
+            <h1 className="greeting-text">{greeting.title}</h1>
+            <p
+              className="greeting-text-p subTitle"
+              style={{ color: theme.secondaryText }}
+            >
+              <span>I'm </span>
+              <span style={{ color: theme.accentColor }}>
+                {greeting.full_name}.{" "}
+              </span>
+              {greeting.subTitle}
+            </p>
+            <SocialMedia />
+            <div className="portfolio-repo-btn-div">
+              <button
+                {...styles}
+                className="button"
+                onClick={() => {
+                  navigate("/contact");
+                }}
               >
-                <span>I'm </span>
-                <span style={{ color: theme.accentColor }}>
-                  {greeting.full_name}.{" "}
-                </span>
-                {greeting.subTitle}
-              </p>
-              <SocialMedia />
-              <div className="portfolio-repo-btn-div">
-                <button
-                  {...styles}
-                  className="button"
-                  onClick={() => {
-                    history.push("/contact");
-                  }}
-                >
-                  Contact Me
-                </button>
-                <button
-                  {...styles}
-                  className="button"
-                  onClick={() => {
-                    history.push("/projects");
-                  }}
-                >
-                  Portfolio
-                </button>
-              </div>
+                Contact Me
+              </button>
+              <button
+                {...styles}
+                className="button"
+                onClick={() => {
+                  navigate("/projects");
+                }}
+              >
+                Portfolio
+              </button>
             </div>
           </div>
-          <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
-          </div>
         </div>
-      </motion.div>
+        <div className="greeting-image-div">
+          <FeelingProud theme={theme} />
+        </div>
+      </div>
+    </motion.div>
   );
 }
