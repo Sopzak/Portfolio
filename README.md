@@ -1,6 +1,11 @@
 # MyPortfolio
 
+A clean, modern, and fully customizable personal portfolio built with React 18 + Vite, featuring light/dark themes, animated sections, and a responsive layout.
+
+## Live Preview
+
 ![Portfolio](/src/assets/images/portfolio.gif)
+
 
 ## Video
 
@@ -26,9 +31,10 @@
 
 # How To Use/Clone this project
 
-- Clone this repository (or fork, then clone your fork :) )
-- Run `npm i`
-- Check it out using `npm start`
+- git clone https://github.com/Sopzak/Portfolio.git
+- cd Portfolio
+- npm install
+- npm run dev
 
 # How Do I Customize
 
@@ -58,12 +64,12 @@ Now, your website is successfully deployed and you can visit it at `<your-github
 
 # Technologies used 🛠️
 
-- [React](https://reactjs.org/)
-- [graphql](https://graphql.org/)
-- [apollo-boost](https://www.apollographql.com/docs/react/get-started/)
-- [baseui](https://github.com/uber/baseweb)
-- [react-reveal](https://www.react-reveal.com/)
-- [styled-components](https://styled-components.com/)
+- React 18
+- Vite
+- Styled‑Components
+- Iconify
+- EmailJS
+- CSS Animations
 
 # illustrations 🍥
 
@@ -71,4 +77,4 @@ Now, your website is successfully deployed and you can visit it at `<your-github
 
 # References
 
-Based on https://github.com/harikanani/PortfolioV2,
+Inspirated on https://github.com/harikanani/PortfolioV2,
