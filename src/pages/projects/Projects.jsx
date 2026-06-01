@@ -3,20 +3,29 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 
 import { projectsHeader, projects } from "../../portfolio.jsx";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
 
+// 🔥 Substitui o antigo "style()" do glamor
+const AccentLink = styled.a`
+  background-color: ${(props) => props.theme.accentBright};
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    box-shadow: 0 5px 15px ${(props) => props.theme.accentBright};
+  }
+`;
+
 function Projects(props) {
   const theme = props.theme;
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
 
   return (
     <div className="projects-main">
@@ -63,9 +72,14 @@ function Projects(props) {
       <br />
       <br />
 
-      <a {...styles} className="general-btn" href="https://github.com/Sopzak/">
+      {/* 🔥 Agora usando styled-components */}
+      <AccentLink
+        theme={theme}
+        className="general-btn"
+        href="https://github.com/Sopzak/"
+      >
         More Projects (Github)
-      </a>
+      </AccentLink>
 
       <br />
       <br />

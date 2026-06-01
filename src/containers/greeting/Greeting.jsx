@@ -3,21 +3,25 @@ import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 
 import { useNavigate } from "react-router-dom";
 
 import FeelingProud from "./FeelingProud";
 
+// 🔥 Substitui o antigo "style()" do glamor
+const AccentButton = styled.button`
+  background-color: ${(props) => props.theme.accentBright};
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 5px 15px ${(props) => props.theme.accentBright};
+  }
+`;
+
 export default function Greeting(props) {
   const theme = props.theme;
   const navigate = useNavigate();
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
 
   return (
     <motion.div
@@ -43,29 +47,29 @@ export default function Greeting(props) {
               </span>
               {greeting.subTitle}
             </p>
+
             <SocialMedia />
+
             <div className="portfolio-repo-btn-div">
-              <button
-                {...styles}
+              <AccentButton
+                theme={theme}
                 className="button"
-                onClick={() => {
-                  navigate("/contact");
-                }}
+                onClick={() => navigate("/contact")}
               >
                 Contact Me
-              </button>
-              <button
-                {...styles}
+              </AccentButton>
+
+              <AccentButton
+                theme={theme}
                 className="button"
-                onClick={() => {
-                  navigate("/projects");
-                }}
+                onClick={() => navigate("/projects")}
               >
                 Portfolio
-              </button>
+              </AccentButton>
             </div>
           </div>
         </div>
+
         <div className="greeting-image-div">
           <FeelingProud theme={theme} />
         </div>

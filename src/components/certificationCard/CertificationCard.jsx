@@ -1,18 +1,23 @@
 import React from "react";
 import "./CertificationCard.css";
 import { motion } from "framer-motion";
+import styled from "styled-components";
+
+// 🔥 Substitui o antigo style() do glamor
+const CardWrapper = styled.div`
+  box-shadow: 0px 2px 5px ${(props) => props.color};
+  border: 1px solid ${(props) => props.color};
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0 5px 15px ${(props) => props.color};
+  }
+`;
 
 function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
-
-  const styles = style({
-    boxShadow: `0px 2px 5px ${certificate.color_code}`,
-    border: `1px solid ${certificate.color_code}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${certificate.color_code}`,
-    },
-  });
 
   return (
     <motion.div
@@ -21,7 +26,8 @@ function CertificationCard(props) {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <div className="cert-card" {...styles}>
+      {/* 🔥 Agora usando styled-components */}
+      <CardWrapper className="cert-card" color={certificate.color_code}>
         <div className="content">
           <a
             href={certificate.certificate_link}
@@ -60,7 +66,7 @@ function CertificationCard(props) {
             {certificate.subtitle}
           </h3>
         </div>
-      </div>
+      </CardWrapper>
     </motion.div>
   );
 }

@@ -1,34 +1,36 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.jsx";
 
+// 🔥 Substitui o antigo "style()" do glamor
+const IconButton = styled.button`
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+  margin-right: 5px;
+  margin-left: 15px;
+  padding-top: 5px;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background-color: ${(props) =>
+    props.theme.name === "light" ? "#7CD1F7" : "#292C3F"};
+  outline: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 3px 8px
+      ${(props) => (props.theme.name === "light" ? "#F7D774" : "#646464")};
+  }
+`;
+
 function Header(props) {
   const theme = props.theme;
-
-  const styles = style({
-    cursor: "pointer",
-    height: "45px",
-    width: "45px",
-    marginRight: "5px",
-    marginLeft: "15px",
-    paddingTop: "5px",
-    borderRadius: "50%",
-    border: "none",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
-    outline: "none",
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      boxShadow: `0 3px 8px ${
-        props.theme.name === "light" ? "#F7D774" : "#646464"
-      }`,
-    },
-  });
-
   const link = settings.isSplash ? "/splash" : "/home";
 
   const [currTheme, setCurrTheme] = useState(props.theme);
@@ -53,7 +55,7 @@ function Header(props) {
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1019 14.79 9.05 9.05 0 0121 12.79z" />
+      <path d="M21 12.79A9 9 0 01111.21 3 7 7 0 1019 14.79 9.05 9.05 0 0121 12.79z" />
     </svg>
   );
 
@@ -169,9 +171,10 @@ function Header(props) {
               </NavLink>
             </li>
 
-            <button {...styles} onClick={changeTheme}>
+            {/* 🔥 Agora usando styled-components */}
+            <IconButton theme={props.theme} onClick={changeTheme}>
               {icon}
-            </button>
+            </IconButton>
           </ul>
         </header>
       </div>
