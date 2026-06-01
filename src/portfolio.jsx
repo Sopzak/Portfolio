@@ -467,6 +467,27 @@ const experience = {
           company: "Keelings",
           company_url: "https://www.keelings.com/",
           logo_path: "keelings_logo.png",
+          duration: "Feb 2024 – Dec 2025",
+          location: "Dublin, Ireland",
+          description:
+            "Keelings Knowledge is the software division of the Keelings Group—one of Europe’s leading fresh produce companies. I developed and modernized mission‑critical systems used by quality auditors, farm supervisors, and distribution centers across multiple countries.",
+          tasksList: [
+            "Led the development of a complete Quality Control ecosystem, replacing a legacy Angular 1.0 + MySQL system with a modern architecture using SQL Server, .NET Core APIs, and Angular 17 + Capacitor applications.",
+            "Engineered an offline‑first synchronization mechanism to ensure full data integrity in rural environments with limited or no connectivity.",
+            "Integrated Fast Reports to generate detailed quality certificates, analytics dashboards, and automated reporting workflows.",
+            "Developed a mobile‑first harvest supervision solution, including Bluetooth thermal printer integration for real‑time pallet labeling in the field.",
+            "Built cross‑referencing modules that link harvest data (GPS, worker ID, timestamps) with quality inspection metrics, enabling full traceability from farm to distribution center.",
+            "Implemented AI‑powered label verification and visual inspection features, significantly reducing human error and accelerating the auditing process.",
+            "Created an automated localization engine using AI to translate the entire platform into German, Spanish, and Polish.",
+            "Maintained and optimized complex SQL Server stored procedures and contributed to VB.Net components within the company’s core ERP system.",
+          ],
+          color: "#0071C5",
+        },
+        {
+          title: "Software Engineer",
+          company: "Keelings",
+          company_url: "https://www.keelings.com/",
+          logo_path: "keelings_logo.png",
           duration: "Fev 2024 - Dez 2025",
           location: "Dublin - Ireland",
           description:
