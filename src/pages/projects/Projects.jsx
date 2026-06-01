@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import { projectsHeader, projects } from "../../portfolio.jsx";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
@@ -21,12 +22,19 @@ function Projects(props) {
   return (
     <div className="projects-main">
       <Header theme={theme} setTheme={props.setTheme} />
+
       <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               <ProjectsImg theme={theme} />
             </div>
+
             <div className="projects-heading-text-div">
               <h1
                 className="projects-heading-text"
@@ -34,29 +42,35 @@ function Projects(props) {
               >
                 {projectsHeader.title}
               </h1>
+
               <p
                 className="projects-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                {projectsHeader["description"]}
+                {projectsHeader.description}
               </p>
             </div>
           </div>
-        </Fade>
+        </motion.div>
       </div>
+
       <div className="repo-cards-div-main">
         {projects.data.map((repo) => {
-          return <ProjectCard repo={repo} theme={theme} />;
+          return <ProjectCard repo={repo} theme={theme} key={repo.id} />;
         })}
       </div>
+
       <br />
       <br />
       <br />
+
       <a {...styles} className="general-btn" href="https://github.com/Sopzak/">
         More Projects (Github)
       </a>
+
       <br />
       <br />
+
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

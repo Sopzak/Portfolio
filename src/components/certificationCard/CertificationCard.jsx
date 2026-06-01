@@ -1,11 +1,12 @@
 import React from "react";
 import "./CertificationCard.css";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import { style } from "glamor";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
+
   const styles = style({
     boxShadow: `0px 2px 5px ${certificate.color_code}`,
     border: `1px solid ${certificate.color_code}`,
@@ -15,7 +16,12 @@ function CertificationCard(props) {
   });
 
   return (
-    <Fade bottom duration={2000} distance="20px">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="cert-card" {...styles}>
         <div className="content">
           <a
@@ -24,27 +30,30 @@ function CertificationCard(props) {
             rel="noopener noreferrer"
           >
             <div className="content-overlay"></div>
+
             <div
               className="cert-header"
               style={{ backgroundColor: certificate.color_code }}
             >
               <img
                 className="logo_img"
-                src={new URL(`../../assets/images/${certificate.logo_path}`, import.meta.url).href}
+                src={
+                  new URL(
+                    `../../assets/images/${certificate.logo_path}`,
+                    import.meta.url
+                  ).href
+                }
                 alt={certificate.alt_name}
               />
             </div>
-            {/* <div className="content-details fadeIn-top">
-									<h3 className="content-title" style={{ color: theme.body }}>
-										Certificate
-									</h3>
-								</div> */}
           </a>
         </div>
+
         <div className="cert-body">
           <h2 className="cert-body-title" style={{ color: theme.text }}>
             {certificate.title}
           </h2>
+
           <h3
             className="cert-body-subtitle"
             style={{ color: theme.secondaryText }}
@@ -53,7 +62,7 @@ function CertificationCard(props) {
           </h3>
         </div>
       </div>
-    </Fade>
+    </motion.div>
   );
 }
 

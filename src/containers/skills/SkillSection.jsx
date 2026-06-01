@@ -2,7 +2,8 @@ import React from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 // import DesignImg from "./DesignImg";
@@ -23,35 +24,59 @@ function SkillSection(props) {
         if (index % 2 === 0) {
           return (
             <div className="skills-main-div">
-              <Fade left duration={2000}>
+              <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
                 <div className="skills-image-div">
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
-              </Fade>
+              </motion.div>
 
               <div className="skills-text-div">
-                <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {skill.title}
-                  </h1>
-                </Fade>
-                <Fade right duration={1500}>
+                <motion.h1
+                  className="skills-heading"
+                  style={{ color: theme.text }}
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  {skill.title}
+                </motion.h1>
+
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
                   <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade>
-                <Fade right duration={2000}>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1.0 }}
+                  viewport={{ once: true }}
+                >
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
                         <p
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
+                          key={skillSentence}
                         >
                           {skillSentence}
                         </p>
                       );
                     })}
                   </div>
-                </Fade>
+                </motion.div>
+
               </div>
             </div>
           );
@@ -59,38 +84,65 @@ function SkillSection(props) {
           return (
             <div className="skills-main-div">
               <div className="skills-text-div">
-                <Fade left duration={1000}>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
                   <h1 className="skills-heading" style={{ color: theme.text }}>
                     {skill.title}
                   </h1>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
                     {skill.title2}
                   </h1>
-                </Fade>
-                <Fade left duration={1500}>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
                   <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade>
-                <Fade left duration={2000}>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1.0 }}
+                  viewport={{ once: true }}
+                >
                   <div>
                     {skill.skills.map((skillSentence) => {
                       return (
                         <p
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
+                          key={skillSentence}
                         >
                           {skillSentence}
                         </p>
                       );
                     })}
                   </div>
-                </Fade>
+                </motion.div>
+
               </div>
-              <Fade right duration={2000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                </div>
-              </Fade>
+
+              <motion.div
+                className="skills-image-div"
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <GetSkillSvg fileName={skill.fileName} theme={theme} />
+              </motion.div>
             </div>
+
+
           );
         }
       })}

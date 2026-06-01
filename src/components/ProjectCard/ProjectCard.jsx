@@ -1,7 +1,8 @@
 import React from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import { style } from "glamor";
 
 export default function ProjectCard({ repo, theme }) {
@@ -34,7 +35,12 @@ export default function ProjectCard({ repo, theme }) {
 
   return (
     <div>
-      <Fade bottom duration={2000} distance="40px">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
         <div
           {...styles}
           key={repo.id}
@@ -46,25 +52,34 @@ export default function ProjectCard({ repo, theme }) {
               {repo.name}
             </p>
           </div>
+
           <p className="repo-description" style={{ color: theme.text }}>
             {repo.description}
           </p>
+
           <div className="repo-details">
             <ProjectLanguages logos={repo.languages} />
           </div>
+
           {repo.source.map((image) => {
             return (
-              <div className="repo-details">
+              <div className="repo-details" key={image}>
                 <img
                   className="repo-gif"
-                  src={new URL(`../../assets/images/${image}`, import.meta.url).href}
+                  src={
+                    new URL(
+                      `../../assets/images/${image}`,
+                      import.meta.url
+                    ).href
+                  }
                   alt={repo.name}
                 />
               </div>
             );
           })}
         </div>
-      </Fade>
+      </motion.div>
+
     </div>
   );
 }

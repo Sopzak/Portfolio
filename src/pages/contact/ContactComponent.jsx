@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import "./ContactComponent.css";
 import { greeting, contactPageData } from "../../portfolio.jsx";
 import { style } from "glamor";
@@ -22,16 +23,28 @@ function Contact(props) {
   return (
     <div className="contact-main">
       <Header theme={theme} setTheme={props.setTheme} />
+
       <div className="basic-contact">
-        <Fade bottom duration={1000} distance="40px">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
-                src={new URL(`../../assets/images/${ContactData["profile_image_path"]}`, import.meta.url).href}
+                src={
+                  new URL(
+                    `../../assets/images/${ContactData["profile_image_path"]}`,
+                    import.meta.url
+                  ).href
+                }
                 alt=""
               />
             </div>
+
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
@@ -39,33 +52,44 @@ function Contact(props) {
               >
                 {ContactData["title"]}
               </h1>
+
               <p
                 className="contact-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
                 {ContactData["description"]}
               </p>
+
               <SocialMedia />
               <br />
               <br />
+
               <p
                 className="contact-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}
               >
                 Resume to download:
               </p>
+
               {greeting.resumeLink.map((resume) => {
                 return (
-                  <a {...styles} className="general-btn" href={resume.link}>
+                  <a
+                    {...styles}
+                    className="general-btn"
+                    href={resume.link}
+                    key={resume.role}
+                  >
                     {resume.role}
                   </a>
                 );
               })}
+
               <br />
             </div>
           </div>
-        </Fade>
+        </motion.div>
       </div>
+
       <Footer theme={props.theme} onToggle={props.onToggle} />
     </div>
   );

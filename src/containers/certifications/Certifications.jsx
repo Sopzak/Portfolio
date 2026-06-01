@@ -1,6 +1,7 @@
 import React from "react";
 import "./Certifications.css";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import { certifications } from "../../portfolio";
 import CertificationCard from "../../components/certificationCard/CertificationCard";
 
@@ -9,11 +10,16 @@ function Certifications(props) {
   return (
     <div className="main" id="certs">
       <div className="certs-header-div">
-        <Fade bottom duration={2000} distance="20px">
-          <h1 className="certs-header" style={{ color: theme.text }}>
-            Certifications
-          </h1>
-        </Fade>
+        <motion.h1
+          className="certs-header"
+          style={{ color: theme.text }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          Certifications
+        </motion.h1>
       </div>
       <div className="certs-body-div">
         {certifications.certifications.map((cert) => {

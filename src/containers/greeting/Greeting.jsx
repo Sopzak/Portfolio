@@ -2,7 +2,8 @@ import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
@@ -19,8 +20,15 @@ export default function Greeting(props) {
   });
 
   return (
-    <Fade bottom duration={2000} distance="40px">
-      <div className="greet-main" id="greeting">
+    <motion.div
+        className="greet-main"
+        style={{ color: theme.text }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        id="greeting"
+      >
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
@@ -62,7 +70,6 @@ export default function Greeting(props) {
             <FeelingProud theme={theme} />
           </div>
         </div>
-      </div>
-    </Fade>
+      </motion.div>
   );
 }

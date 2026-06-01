@@ -1,6 +1,6 @@
 import React from "react";
 import "./DegreeCard.css";
-import { Fade, Flip } from "react-reveal";
+import { motion } from "framer-motion";
 import { style } from "glamor";
 
 function DegreeCard(props) {
@@ -10,7 +10,7 @@ function DegreeCard(props) {
   const style_img = style({
     width: "220px",
     height: "auto",
-    borderRadius: " 50%",
+    borderRadius: "50%",
     padding: "10px",
     border: `1px solid ${theme.accentColor}`,
     marginRight: "50px",
@@ -69,69 +69,85 @@ function DegreeCard(props) {
 
   return (
     <div className="degree-card">
-      <Flip left duration={2000}>
-        <div {...style_img}>
-          <img
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-              borderRadius: "40px",
-            }}
-              src={new URL(`../../assets/images/${degree.logo_path}`, import.meta.url).href}
-              alt={degree.alt_name}
+      {/* Substituindo Flip left */}
+      <motion.div
+        {...style_img}
+        initial={{ opacity: 0, rotateY: -90 }}
+        whileInView={{ opacity: 1, rotateY: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <img
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+            borderRadius: "40px",
+          }}
+          src={
+            new URL(
+              `../../assets/images/${degree.logo_path}`,
+              import.meta.url
+            ).href
+          }
+          alt={degree.alt_name}
+        />
+      </motion.div>
 
-          />
+      {/* Substituindo Fade right */}
+      <motion.div
+        {...card_body}
+        initial={{ opacity: 0, x: 40 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div
+          className="body-header"
+          style={{ backgroundColor: theme.accentColor }}
+        >
+          <div className="body-header-title">
+            <h2 className="card-title" style={{ color: "#FFFFFF" }}>
+              {degree.title}
+            </h2>
+            <h3 className="card-subtitle" style={{ color: "#FFFFFF" }}>
+              {degree.subtitle}
+            </h3>
+          </div>
+
+          <div className="body-header-duration">
+            <h3 className="duration" style={{ color: "#FFFFFF" }}>
+              {degree.duration}
+            </h3>
+          </div>
         </div>
-      </Flip>
-      <Fade right duration={2000} distance="40px">
-        <div {...card_body}>
-          <div
-            className="body-header"
-            style={{ backgroundColor: theme.accentColor }}
+
+        <div className="body-content">
+          {degree.descriptions.map((sentence) => (
+            <p className="content-list" style={{ color: theme.text }} key={sentence}>
+              {sentence}
+            </p>
+          ))}
+
+          <a
+            href={degree.website_link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", textAlign: "center" }}
           >
-            <div className="body-header-title">
-              <h2 className="card-title" style={{ color: "#FFFFFF" }}>
-                {degree.title}
-              </h2>
-              <h3 className="card-subtitle" style={{ color: "#FFFFFF" }}>
-                {degree.subtitle}
-              </h3>
-            </div>
-            <div className="body-header-duration">
-              <h3 className="duration" style={{ color: "#FFFFFF" }}>
-                {degree.duration}
-              </h3>
-            </div>
-          </div>
-          <div className="body-content">
-            {degree.descriptions.map((sentence) => {
-              return (
-                <p className="content-list" style={{ color: theme.text }}>
-                  {sentence}
-                </p>
-              );
-            })}
-            <a
-              href={degree.website_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", textAlign: "center" }}
+            <p
+              {...button_visit}
+              style={{
+                marginRight: "23px",
+                textDecoration: "none",
+                float: "right",
+                backgroundColor: theme.accentColor,
+              }}
             >
-              <p
-                {...button_visit}
-                style={{
-                  marginRight: "23px",
-                  textDecoration: "none",
-                  float: "right",
-                  backgroundColor: theme.accentColor,
-                }}
-              >
-                Visit Website
-              </p>
-            </a>
-          </div>
+              Visit Website
+            </p>
+          </a>
         </div>
-      </Fade>
+      </motion.div>
     </div>
   );
 }

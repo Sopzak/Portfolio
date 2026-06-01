@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
+
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.jsx";
 import { CgSun } from "react-icons/cg/";
@@ -33,7 +34,6 @@ function Header(props) {
 
   const link = settings.isSplash ? "/splash" : "/home";
 
-
   const [currTheme, setCurrTheme] = useState(props.theme);
 
   function changeTheme() {
@@ -64,20 +64,26 @@ function Header(props) {
     );
 
   return (
-    <Fade top duration={1000} distance="20px">
+    <motion.div
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
       <div>
         <header className="header">
-          <NavLink to={link}  className="logo">
+          <NavLink to={link} className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
             </span>
             <span style={{ color: theme.text }}></span>
           </NavLink>
+
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">
             <span className="navicon"></span>
           </label>
+
           <ul className="menu">
             <li>
               <NavLink
@@ -89,17 +95,18 @@ function Header(props) {
                 Home
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 className="ec"
                 to="/education"
-                
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Education
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 className="xp"
@@ -110,35 +117,36 @@ function Header(props) {
                 Experience
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 className="projects"
                 to="/projects"
-                
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Portfolio
               </NavLink>
             </li>
+
             <li>
               <NavLink
                 className="cr"
                 to="/contact"
-                
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Contact and Resume
               </NavLink>
             </li>
+
             <button {...styles} onClick={changeTheme}>
               {icon}
             </button>
           </ul>
         </header>
       </div>
-    </Fade>
+    </motion.div>
   );
 }
 
